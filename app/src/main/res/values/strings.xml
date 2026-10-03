@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Amber</string>
+    <string name="tagline">A softer screen,\nwherever you go.</string>
+    <string name="intro">Ease into the evening with a warm filter that follows you across your phone.</string>
+    <string name="filter_off">Filter is off</string>
+    <string name="filter_on">Filter is on</string>
+    <string name="off_detail">Your screen is using its original colors.</string>
+    <string name="on_detail">A warm tint is active across supported screens.</string>
+    <string name="turn_on">Turn on filter</string>
+    <string name="turn_off">Turn off filter</string>
+    <string name="warmth">Warmth</string>
+    <string name="strength">Filter strength</string>
+    <string name="warmth_hint">From a gentle golden tint to a deeper amber.</string>
+    <string name="strength_hint">Choose how much of the warm tint covers your screen.</string>
+    <string name="presets">Make it yours</string>
+    <string name="gentle">Gentle</string>
+    <string name="evening">Evening</string>
+    <string name="deep">Deep</string>
+    <string name="permission_title">One permission, a softer screen</string>
+    <string name="permission_detail">Allow Amber to display over other apps so the filter can follow you when you leave this app.</string>
+    <string name="allow_overlay">Allow display over other apps</string>
+    <string name="good_to_know">Good to know</string>
+    <string name="limitations">Android may hide filters on protected apps, permission dialogs, the lock screen, and parts of the system interface. If a button will not respond, turn the filter off from its notification or Quick Settings.\n\nAmber adds a warm tint; it does not change your display hardware or guarantee a medical benefit.</string>
+    <string name="tile_tip">For an easy shortcut, add Amber to your Quick Settings tiles using the panel’s Edit button.</string>
+    <string name="notification_channel">Screen filter</string>
+    <string name="notification_title">Amber filter is on</string>
+    <string name="notification_detail">Tap to adjust your warm screen filter.</string>
+    <string name="stop">Turn off</string>
+    <string name="notification_tip">Notifications are disabled. Allow them in Android settings for a visible Turn off shortcut, or use Amber’s Quick Settings tile.</string>
+    <string name="overlay_error">Could not display the filter. Check “Display over other apps” permission and try again.</string>
+    <string name="settings_error">Open Android Settings → Apps → Special app access → Display over other apps, then allow Amber.</string>
+    <string name="start_error">Android could not start the filter. Open Amber and try again.</string>
+    <string name="percentage">%1$d%%</string>
+    <string name="settings_saved">Your settings are saved for next time.</string>
+</resources>

@@ -1,0 +1,65 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#111B23" android:fillViewport="true" android:clipToPadding="false">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="24dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:gravity="center_vertical" android:orientation="horizontal" android:layout_marginTop="12dp">
+            <ImageView android:layout_width="36dp" android:layout_height="36dp" android:src="@drawable/ic_moon" android:importantForAccessibility="no" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginStart="10dp" android:text="@string/app_name" android:textSize="22sp"
+                android:textColor="#F8B76A" android:fontFamily="sans-serif-medium" />
+        </LinearLayout>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28dp"
+            android:text="@string/tagline" android:textColor="#F4F1EB" android:textSize="34sp" android:fontFamily="sans-serif-medium" />
+        <TextView style="@style/Body" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:text="@string/intro" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="28dp" android:background="@drawable/card" android:padding="20dp" android:orientation="vertical">
+            <TextView android:id="@+id/status" style="@style/SectionTitle" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="@string/filter_off" android:accessibilityLiveRegion="polite" />
+            <TextView android:id="@+id/status_detail" style="@style/Body" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="6dp" android:text="@string/off_detail" />
+            <Button android:id="@+id/toggle" android:layout_width="match_parent" android:layout_height="56dp"
+                android:layout_marginTop="20dp" android:background="@drawable/primary_button" android:backgroundTint="@null"
+                android:text="@string/turn_on" android:textAllCaps="false" android:textColor="#201B14" android:textSize="16sp" />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/permission_card" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:layout_marginTop="16dp" android:padding="20dp" android:background="@drawable/card">
+            <TextView style="@style/SectionTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/permission_title" />
+            <TextView style="@style/Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/permission_detail" android:layout_marginTop="8dp" />
+            <Button android:id="@+id/permission_button" style="@style/PresetButton" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" android:text="@string/allow_overlay" />
+        </LinearLayout>
+        <TextView android:id="@+id/notification_tip" style="@style/Body" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" android:text="@string/notification_tip" android:visibility="gone" />
+        <TextView style="@style/SectionTitle" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="28dp" android:text="@string/presets" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="8dp">
+            <Button android:id="@+id/gentle" style="@style/PresetButton" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="@string/gentle" />
+            <Button android:id="@+id/evening" style="@style/PresetButton" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="@string/evening" />
+            <Button android:id="@+id/deep" style="@style/PresetButton" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="@string/deep" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp"
+            android:orientation="vertical" android:padding="20dp" android:background="@drawable/card">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView style="@style/SectionTitle" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="@string/warmth" />
+                <TextView android:id="@+id/warmth_value" style="@style/Body" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView style="@style/Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/warmth_hint" />
+            <SeekBar android:id="@+id/warmth" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="8dp"
+                android:contentDescription="@string/warmth" android:max="100" android:progress="60" android:progressTint="#F8B76A" android:thumbTint="#F8B76A" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="20dp">
+                <TextView style="@style/SectionTitle" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="@string/strength" />
+                <TextView android:id="@+id/strength_value" style="@style/Body" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView style="@style/Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/strength_hint" />
+            <SeekBar android:id="@+id/strength" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="8dp"
+                android:contentDescription="@string/strength" android:max="100" android:progress="45" android:progressTint="#F8B76A" android:thumbTint="#F8B76A" />
+            <TextView style="@style/Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/settings_saved" android:textSize="12sp" />
+        </LinearLayout>
+        <TextView style="@style/Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/tile_tip" />
+        <TextView style="@style/SectionTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:text="@string/good_to_know" />
+        <TextView style="@style/Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="20dp" android:text="@string/limitations" android:textSize="13sp" />
+    </LinearLayout>
+</ScrollView>
